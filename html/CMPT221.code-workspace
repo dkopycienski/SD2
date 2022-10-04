@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "cmpt220kopycienski",
+			"path": "../../cmpt220kopycienski"
+		},
+		{
+			"name": "SD2",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"labs/6",
+			"hw/5",
+			"hw/4",
+			"hw/0",
+			"hw/6"
+		]
+	}
+}

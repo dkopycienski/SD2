@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--    A03-Kopycienski.html    Personal Home Page
+        09/19/2022  DK Original Program
+    -->
+<html lang="en">
+    <head>
+        <title> Assignment 3 Personal Home Page - Daisy Kopycienski </title>
+        <meta charset="utf-8">
+
+        <style>
+            body {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background: linear-gradient(90deg, rgba(204,237,195,1) 0%, rgba(177,208,179,1) 65%, rgba(75,139,94,1) 100%);
+                }
+            .wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    height: 100%;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    margin: 0px;
+                    padding: 0px;
+                    }
+            .left, 
+            .right, 
+            .right-bottom {
+                            margin: 5px;
+                            max-width: 50%;
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            }
+            .left {
+                  align-items: center;
+                  justify-content: center;
+                  }
+            .right-bottom {
+                            align-items: center;
+                            justify-content: center;
+                            }
+            .profilePic {
+                        border-radius: 50%;
+                        }
+            .social-links  {
+                            text-align:center;
+                            }
+            .social-links a {
+                            text-decoration: none;
+                            }
+            .social-links a:hover {
+                        background-color: rgba(0, 0, 0, 0.1);
+                        }
+            table {
+                   background-color: darkseagreen; color: black;
+                   border-collapse: collapse; border: 1px solid black;
+                   margin-left: auto; margin-right: auto;
+                   }
+            th    {
+                   background-color: grey;
+                   font-size: 17px; font-weight: bold;
+                   border: 1px solid black;
+                   border-collapse: collapse;
+                   }
+            td     {
+                    font-size: 15px; padding-left: 5px; padding-right: 5px;
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    }
+            h1     {
+                    color: red;
+                    }
+            tr:nth-child(even) {
+                                background-color: silver;
+                                }
+            
+        </style>
+    </head>
+
+    
+
+    <body>
+        
+        <header> 
+            <h1 style="color: #3b4812;"> Personal Home Page</h1>
+        </header>
+
+        <div class="top">
+            <nav>
+                <a href="/Users/DaisyK/SD2/html/a03-kopycienski.html">
+                    <img src="home.png" width="50">
+                </a>
+
+                <a href="https://github.com/dkopycienski">
+                    <img src="GitHub.png" width = "100">
+                </a>
+            </nav>
+        </div>
+
+        <hr>
+
+        <div class="wrapper">
+        
+        <div class="left"> 
+            <img class="profilePic" src="personalPhoto.jpg" width = "250">
+            <h2 style="color: #3b4812;"> Daisy Kopycienski </h2>
+            <h4> Cybersecurity Student</h4>
+        </div>
+
+
+        <div class="right">
+        <hr>
+        <h2> Marist College Student</h2>
+            <ul class="bio">
+                <li>Class of 2024 </li>
+                <li>Major: Cybersecurity </li>
+                <li>Minors: IT, IS, CS</li>
+                <li>Honors Program</li>
+                <li>Peer Tutor</li>
+                <li>SEED Club </li>
+                <li>Link to GitHub: <a href="https://github.com/dkopycienski">
+                    <br>
+                    <img src="GitHub.png" width = "100">
+                </a></li>
+            </ul> 
+        </div>
+        
+
+        <div class="right-bottom">
+        <h2 style="text-align:center;"> Courses Taken </h2>
+
+            <table>
+                <tr>
+                    <th> High School </th>
+                    <th> Freshman </th>
+                    <th> Sophomore </th>
+                    <th> Junior </th>
+                </tr>
+
+                <tr>
+                    <td> AP Comp Sci </td>
+                    <td> Intro to Bus & Mgt </td>
+                    <td> Software Dev 1 </td>
+                    <td> Software Dev 2 </td>
+                </tr>
+
+                <tr>
+                    <td> AP Lang </td>
+                    <td> Intro to Programming </td>
+                    <td> Data Comm </td>
+                    <td> System Design</td>
+                </tr>
+
+                <tr>
+                    <td> AP English </td>
+                    <td> Stats </td>
+                    <td> Software Systems </td>
+                    <td> Intro to CyberSec</td>
+                </tr>
+
+                <tr>
+                    <td> AP Calc BC </td>
+                    <td> Philosophy </td>
+                    <td> Honors FYS </td>
+                    <td> HS Ethics of Computing</td>
+                </tr>
+
+                <tr>
+                    <td> Physics </td>
+                    <td> </td>
+                    <td> Discrete Math </td>
+                    <td> Hatha Yoga </td>
+                </tr>
+
+                <tr>
+                    <td> AP Psych </td>
+                    <td>  </td>
+                    <td> Internetworking </td>
+                    <td> </td>
+                </tr>
+
+                <tr>
+                    <td> Programming (java) </td>
+                    <td>  </td>
+                    <td> Database MGT </td>
+                    <td> </td>
+                </tr>
+
+                <tr>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> HS Women + Art </td>
+                    <td> </td>
+                </tr>
+
+                <tr>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> Modern Dance </td>
+                    <td> </td>
+                </tr>
+            </table>
+            
+        </div>
+        </div>
+
+        <div>
+        <footer> 
+            <hr> 
+            <p style="text-align:center;"> 
+            <small> (C) D Kopycienski, 2022 </small>
+            <div class="social-links">
+             Email <a href="mailto:daisy.kopycienski1@marist.edu"> Daisy</a>
+            </div>
+        </footer>
+        </div>
+
+    
+    </body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--    L03-Kopycienski.html    Even More HTML
+        09/16/2022  DK Original Program
+    -->
+<html lang="en">
+    <head>
+        <title> Lab 3 Even More HTML - Daisy Kopycienski </title>
+        <meta charset="utf-8">
+
+        <style>
+            table {background-color: darkseagreen; color: black;
+                   border-collapse: collapse; border: 1px solid black;
+                   font-family: arial; font-weight: normal;
+                   margin-left: auto; margin-right: auto;
+                   }
+            th    {background-color: grey;
+                   font-size: 17px; font-weight: bold;
+                   border: 1px solid black;
+                    border-collapse: collapse;
+                   }
+            td     {font-size: 15px; padding-left: 5px; padding-right: 5px;
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    }
+            h1     {color: red;
+                    }
+            tr:nth-child(even) {background-color: silver;
+                                }
+        </style>
+
+    </head>
+
+    
+
+    <body>
+
+        <header> 
+            <h1 style="color:blue;"> My Lab 3 Page </h1>
+        </header>
+
+
+        <hr>
+        <nav> 
+            <ul>
+                <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Structural Elements</a>  </li>
+                <li><a href="https://www.w3schools.com/html/html_lists.asp">Lists</a>  </li>
+                <li><a href="https://www.w3schools.com/html/html_tables.asp">Tables</a>  </li>
+                <li><a href="https://validator.w3.org/">HTML Validator</a>  </li>
+                <li><a href="https://www.w3schools.com/colors/colors_picker.asp">
+                    <img src="https://www.usability.gov/sites/default/files/images/color-wheel.png" width="50" height="50">
+                </a></li>
+            </ul> 
+        </nav>
+        <hr>
+
+
+        <h2 style="text-align:center;"> HTML Commands </h2>
+
+        <main> 
+            <table>
+                <tr>
+                    <th> Item </th>
+                    <th> Description </th>
+                </tr>
+
+                <tr>
+                    <td> Headers </td>
+                    <td> &lt;h1> - &lt;h6> </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;b> </td>
+                    <td> Bolds the text </td>
+                </tr>
+
+                <tr>
+                    <td> Head Tags  </td>
+                    <td> &lt;head> <br> &lt;title> <br> &lt;meta charset="utf-8"> <br> &lt;html lang="en"> <br> &lt;!DOCTYPE html> </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;i> </td>
+                    <td> italicizes the text </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;blockquote> </td>
+                    <td> specifies a section that is quoted from another source </td>
+                </tr>
+
+                <tr>
+                    <td>  &lt;hr> </td>
+                    <td> defines a theme break in the text and is shown with a horizontal line </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;em> </td>
+                    <td> marks text meant to be emphasized and italicises it </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;strong> </td>
+                    <td> marks a part of text as very important and bolds it </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;ul> </td>
+                    <td> specifies an unordered list <br> Seperate items using &lt;li> </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;ol> </td>
+                    <td> specifies an ordered list <br> Seperate items using &lt;li> </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;dl> </td>
+                    <td> marks a term and defintion <br> mark terms using &lt;dt> and mark definitions using &lt;dd> </td>
+                </tr>
+                
+                <tr>
+                    <td> &lt;a href= </td>
+                    <td> marks a link, after equals sign put link, close the bracket, and then type desriptive text for the link </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;img> </td>
+                    <td> Links to an image location and name and displays it on the page </td>
+                </tr>
+            </table>
+
+
+            <h2 style="text-align:center;"> CSS Styles </h2>
+
+            <table>
+                <tr>
+                    <th> Style </th>
+                    <th> Description </th>
+                </tr>
+
+                <tr>
+                    <td> background-color </td>
+                    <td> </td>
+                </tr>
+
+                <tr>
+                    <td> border-collapse: collapse </td>
+                    <td> single line border </td>
+                </tr>
+
+                <tr>
+                    <td> color  </td>
+                    <td> text color </td>
+                </tr>
+
+                <tr>
+                    <td> text sizes </td>
+                    <td> in pixels (px) </td>
+                </tr>
+
+                <tr>
+                    <td> border </td>
+                    <td> weight in pixels </td>
+                </tr>
+
+                <tr>
+                    <td> font:family </td>
+                    <td> text font  </td>
+                </tr>
+
+                <tr>
+                    <td> Font:size </td>
+                    <td> in pixels </td>
+                </tr>
+
+                <tr>
+                    <td> Font:weight </td>
+                    <td> bold or normal </td>
+                </tr>
+
+                <tr>
+                    <td> margin-left:auto and margin-right:auto </td>
+                    <td> centers item </td>
+                </tr>
+
+                <tr>
+                    <td> padding-left and padding-right </td>
+                    <td> spaces in table cells </td>
+                </tr>
+
+                <tr>
+                    <td> Text-align:center </td>
+                    <td> Centers the text in the middle of the page </td>
+                </tr>
+
+                <tr>
+                    <td> tr:nth-child(even) {background-color: silver;} </td>
+                    <td> Sets even numbered rows of a table a different color for easier readabilty </td>
+                </tr>
+            </table>
+
+
+
+            <h2 style="text-align:center;"> Website Design Best Practices </h2>
+
+            <table style="background-color: white;">
+                <tr>
+                    <td> Avoid using too many different fonts </td>
+                </tr>
+
+                <tr>
+                    <td> Avoid using too many different colors </td>
+                </tr>
+
+                <tr>
+                    <td> Have lots of white space </td>
+                </tr>
+
+                <tr>
+                    <td> Minimize text </td>
+                </tr>
+
+                <tr>
+                    <td> Show, don't tell </td>
+                </tr>
+
+                <tr>
+                    <td> Simplify the navigation </td>
+                </tr>
+
+                <tr>
+                    <td> Optimize your design for mobile use</td>
+                </tr>
+            </table>
+        </main>
+
+
+        <footer> 
+            <hr> 
+            <p style="text-align:center;"> 
+            <small> (C) D Kopycienski, 2022 </small>
+            <br> Email <a href="mailto:daisy.kopycienski1@marist.edu"> Daisy</a>
+        </footer>
+
+    </body>
+
+</html>

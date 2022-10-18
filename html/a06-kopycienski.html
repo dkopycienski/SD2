@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--    A06-Kopycienski.html    Reference Page for MySQL Commands
+        10/11/2022  DK Original Program
+    -->
+<html lang="en">
+    <head>
+        <title> Assignment 6 MySQL Commands - Daisy Kopycienski </title>
+        <meta charset="utf-8">
+
+        <style>
+            table {background-color: darkseagreen; color: black;
+                   border-collapse: collapse; border: 1px solid black;
+                   font-family: arial; font-weight: normal;
+                   margin-left: auto; margin-right: auto;
+                   }
+            th    {background-color: grey;
+                   font-size: 17px; font-weight: bold;
+                   border: 1px solid black;
+                    border-collapse: collapse;
+                   }
+            td     {font-size: 15px; padding-left: 5px; padding-right: 5px;
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    }
+            h1     {color: red;
+                    }
+            tr:nth-child(even) {background-color: silver;
+                                }
+        </style>
+
+    </head>
+
+    
+
+    <body>
+
+        <header> 
+            <h1 style="color:blue;"> My MYSQL Reference Page</h1>
+        </header>
+
+
+        <hr>
+        <nav> 
+            <ul>
+                <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Structural Elements</a>  </li>
+                <li><a href="https://www.w3schools.com/html/html_lists.asp">Lists</a>  </li>
+                <li><a href="https://www.w3schools.com/html/html_tables.asp">Tables</a>  </li>
+                <li><a href="https://validator.w3.org/">HTML Validator</a>  </li>
+                <li><a href="https://www.w3schools.com/colors/colors_picker.asp">
+                    <img src="https://www.usability.gov/sites/default/files/images/color-wheel.png" width="50" height="50">
+                </a></li>
+            </ul> 
+        </nav>
+        <hr>
+
+        <main> 
+
+            <h2 style="text-align:center;"> DATABASE COMMANDS </h2>
+
+            <table>
+                <tr>
+                    <th> Commands </th>
+                    <th> Syntax </th>
+                    <th> Description </th>
+                </tr>
+
+                <tr>
+                    <td> Create database </td>
+                    <td> CREATE DATABASE databasename; </td>
+                    <td> used to create a new SQL database. </td>
+                </tr>
+
+                <tr>
+                    <td> Drop database </td>
+                    <td> DROP DATABASE databasename; </td>
+                    <td> used to delete an existing SQL database. </td>
+                </tr>
+
+                <tr>
+                    <td> Show databases </td>
+                    <td> SHOW DATABASES; </td>
+                    <td> used to show existing databases in MySQL </td>
+                </tr>
+
+                <tr>
+                    <td> Use database </td>
+                    <td> USE databasename </td>
+                    <td> Does not require semicolon, allows you to access a database </td>
+                </tr>
+
+                <tr>
+                    <td> Set Privileges </td>
+                    <td> GRANT _ ON _ TO __;  </td>
+                    <td> assigns privileges and roles to MySQL user accounts and roles </td>
+                </tr>
+
+                <tr>
+                    <td> Remove Privileges </td>
+                    <td> REVOKE _ ON _ FROM __;  </td>
+                    <td> enables system administrators to revoke privileges and roles, which can be revoked from user accounts and roles </td>
+                </tr>
+            </table>
+
+
+            <h2 style="text-align:center;"> TABLE COLUMN COMMANDS </h2>
+
+            <table>
+                <tr>
+                    <th> Commands </th>
+                    <th> Syntax </th>
+                    <th> Description </th>
+                </tr>
+
+                <tr>
+                    <td> Create table </td>
+                    <td> CREATE TABLE table_name (
+                        column1 datatype,
+                        column2 datatype,
+                        column3 datatype,
+                       ....
+                        );   </td>
+                    <td> used to create a new table in a database </td>
+                </tr>
+
+                <tr>
+                    <td> Drop table </td>
+                    <td> DROP TABLE table_name; </td>
+                    <td> used to drop an existing table in a database. </td>
+                </tr>
+
+                <tr>
+                    <td> Alter table </td>
+                    <td> ALTER TABLE table_name
+                         ADD column_name datatype; </td>
+                    <td> used to add, delete, or modify columns in an existing table. </td>
+                </tr>
+            </table>
+
+
+            <h2 style="text-align:center;"> COLUMN ATTRIBUTES and MODIFIERS </h2>
+
+            <table>
+                <tr>
+                    <th> Commands </th>
+                    <th> Syntax </th>
+                    <th> Description </th>
+                </tr>
+
+                <tr>
+                    <td> Constraints </td>
+                    <td> CREATE TABLE table_name (
+                        column1 datatype constraint,
+                        column2 datatype constraint,
+                        column3 datatype constraint,
+                        ....
+                    ); </td>
+                    <td> used to specify rules for data in a table. </td>
+                </tr>
+
+                <tr>
+                    <td> NOT NULL </td>
+                    <td> NOT NULL </td>
+                    <td> Ensures that a column cannot have a NULL value </td>
+                </tr>
+
+                <tr>
+                    <td> UNIQUE </td>
+                    <td> UNIQUE </td>
+                    <td> Ensures that all values in a column are different </td>
+                </tr>
+
+                <tr>
+                    <td> PRIMARY KEY </td>
+                    <td> PRIMARY KEY </td>
+                    <td> A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table </td>
+                </tr>
+
+                <tr>
+                    <td> FOREIGN KEY </td>
+                    <td> FOREIGN KEY </td>
+                    <td> Prevents actions that would destroy links between tables </td>
+                </tr>
+
+                <tr>
+                    <td> DEFAULT </td>
+                    <td> City varchar(255) DEFAULT 'Sandnes' </td>
+                    <td> used to set a default value for a column </td>
+                </tr>
+
+                <tr>
+                    <td> CHECK </td>
+                    <td> CHECK (Age>=18) =, >, or < </td>
+                    <td> used to limit the value range that can be placed in a column </td>
+                </tr>
+
+                <tr>
+                    <td> Data Types  </td>
+                    <td> CREATE TABLE table_name (
+                        column1 datatype,
+                        column2 datatype,
+                        column3 datatype,
+                       ....
+                    ); </td>
+                    <td> defines what value the column can hold </td>
+                </tr>
+
+                <tr>
+                    <td> Text  </td>
+                    <td> CHAR(size), VARCHAR(size), TEXT(size), ENUM(val1, val2, val3, ...), SET(val1, val2, val3, ...) </td>
+                    <td> Various string data types, char is for a specific amount of characters, varchar is a range of character with the maximum at the set value </td>
+                </tr>
+
+                <tr>
+                    <td> Numeric </td>
+                    <td> INT(size), INTEGER(size), DECIMAL(size, d), BOOL </td>
+                    <td> Differing data types to store number data, for BOOL, 0 is false and nonzero is true </td>
+                </tr>
+
+                <tr>
+                    <td> Date and Time </td>
+                    <td> DATE, DATETIME(fsp), YEAR </td>
+                    <td> YYYY-MM-DD, YYYY-MM-DD hh:mm:ss, A year in four-digit format, CURDATE(), CURRENT_TIMESTAMP() </td>
+                </tr>
+            </table>
+
+
+            <h2 style="text-align:center;"> TABLE DATA COMMANDS </h2>
+
+            <table>
+                <tr>
+                    <th> Commands </th>
+                    <th> Syntax </th>
+                    <th> Description </th>
+                </tr>
+
+                <tr>
+                    <td> Select </td>
+                    <td> SELECT column1, column2, ...
+                        FROM table_name;</td>
+                    <td> used to select data from a database. </td>
+                </tr>
+
+                <tr>
+                    <td> Where Clause </td>
+                    <td> SELECT column1, column2, ...
+                        FROM table_name
+                        WHERE condition; </td>
+                    <td> used to filter records. </td>
+                </tr>
+
+                <tr>
+                    <td> ORDER BY Keyword </td>
+                    <td> SELECT column1, column2, ...
+                        FROM table_name
+                        ORDER BY column1, column2, ... ASC|DESC; </td>
+                    <td> used to sort the result-set in ascending or descending order. ASC by default, this keyword must be the last command </td>
+                </tr>
+
+                <tr>
+                    <td> INSERT INTO Statement </td>
+                    <td> INSERT INTO table_name (column1, column2, column3, ...)
+                        VALUES (value1, value2, value3, ...); </td>
+                    <td> used to insert new records in a table. Can specify column names and values OR if you are adding values for all columns, you do not need to specify column names </td>
+                </tr>
+
+                <tr>
+                    <td> UPDATE Statement </td>
+                    <td> UPDATE table_name
+                        SET column1 = value1, column2 = value2, ...
+                        WHERE condition; </td>
+                    <td> used to modify the existing records in a table. Always specify the WHERE condition, could update all data in table </td>
+                </tr>
+            </table>
+
+        </main>
+
+
+        <footer> 
+            <hr> 
+            <p style="text-align:center;"> 
+            <small> (C) D Kopycienski, 2022 </small>
+            <br> Email <a href="mailto:daisy.kopycienski1@marist.edu"> Daisy</a>
+        </footer>
+
+    </body>
+
+</html>

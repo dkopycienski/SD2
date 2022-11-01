@@ -58,7 +58,6 @@
         echo $x . " ";
     }
 
-    echo phpinfo() 
 
 
 ?>

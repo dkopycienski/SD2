@@ -82,7 +82,6 @@
 
                     // Input Validation for price (must be a decimal number from 0.00 to 9999.99, cannot be negative
                     // maximum 2 decimal places, can be NULL)
-                    
                     if($price != ""){
                         if ($price < 0 or $price > 10000.00) $error_message = "Enter a valid price (This field must be a number between 0.00 and 9999.99)";
                         else if (!is_numeric($price)) $error_message = "Enter a valid price (This field must be a decimal number)";
